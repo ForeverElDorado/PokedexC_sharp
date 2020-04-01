@@ -21,9 +21,7 @@ namespace PokedexC_sharp
         public VentanaPrincipal()
         {
             InitializeComponent();
-            dataGridView1.DataSource = miConexion.getTodosPokemons();
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+         
         }
 
         private Image convierteBlobAImagen(byte[] img)
@@ -58,19 +56,31 @@ namespace PokedexC_sharp
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            nombrePokemon.Text = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
-            imagenPokemon.Image = convierteBlobAImagen((byte[])dataGridView1.Rows[e.RowIndex].Cells["imagen"].Value);
+          //  nombrePokemon.Text = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+            //imagenPokemon.Image = convierteBlobAImagen((byte[])dataGridView1.Rows[e.RowIndex].Cells["imagen"].Value);
             
         }
 
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            String nombre = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
-            String id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
+           // String nombre = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+           // String id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
 
-            MessageBox.Show(miConexion.actualizaPokemon(id, nombre) );
+           // MessageBox.Show(miConexion.actualizaPokemon(id, nombre) );
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VentanaSeleccionPokemon eligePokemon = new VentanaSeleccionPokemon();
+            eligePokemon.ShowDialog();
+
+            //MessageBox.Show(eligePokemon.idSeleccionado.ToString());
+            idActual = eligePokemon.idSeleccionado;
+            misPokemons = miConexion.getPokemonPorId(idActual);
+            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            imagenPokemon.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
     }
 }
