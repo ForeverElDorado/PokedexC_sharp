@@ -46,8 +46,10 @@
             this.Ataque3Pokemon = new System.Windows.Forms.Label();
             this.IdPokemon = new System.Windows.Forms.Label();
             this.DescripcionPokemon = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // imagenPokemon
@@ -84,9 +86,9 @@
             // 
             this.nombrePokemon.BackColor = System.Drawing.Color.DarkRed;
             this.nombrePokemon.ForeColor = System.Drawing.Color.Black;
-            this.nombrePokemon.Location = new System.Drawing.Point(236, 81);
+            this.nombrePokemon.Location = new System.Drawing.Point(100, 409);
             this.nombrePokemon.Name = "nombrePokemon";
-            this.nombrePokemon.Size = new System.Drawing.Size(111, 36);
+            this.nombrePokemon.Size = new System.Drawing.Size(120, 48);
             this.nombrePokemon.TabIndex = 3;
             this.nombrePokemon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -224,11 +226,23 @@
             this.DescripcionPokemon.TabIndex = 16;
             this.DescripcionPokemon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Image = global::PokedexC_sharp.Properties.Resources.icons8_browse_folder_60px;
+            this.pictureBox2.Location = new System.Drawing.Point(36, 350);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(61, 58);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.buscador);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 500);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.DescripcionPokemon);
             this.Controls.Add(this.Ataque3Pokemon);
             this.Controls.Add(this.Ataque4Pokemon);
@@ -253,6 +267,7 @@
             this.Text = "Pokedex";
             ((System.ComponentModel.ISupportInitialize)(this.imagenPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,6 +291,7 @@
         private System.Windows.Forms.Label Ataque3Pokemon;
         private System.Windows.Forms.Label IdPokemon;
         private System.Windows.Forms.Label DescripcionPokemon;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

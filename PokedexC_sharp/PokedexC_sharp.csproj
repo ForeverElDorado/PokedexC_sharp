@@ -68,6 +68,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscadorPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscadorPokemon.Designer.cs">
+      <DependentUpon>BuscadorPokemon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="VentanaSeleccionPokemon.cs">
       <SubType>Form</SubType>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BuscadorPokemon.resx">
+      <DependentUpon>BuscadorPokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -121,6 +130,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_pokedex.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_browse_folder_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_google_web_search.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,7 @@ namespace PokedexC_sharp
 
         Conexion miConexion = new Conexion();
         DataTable misPokemons = new DataTable();
-        int idActual = 1; //el pokemon que estamos viendo
+        public static int idActual = 1; //el pokemon que estamos viendo
 
         public VentanaPrincipal()
         {
@@ -95,6 +95,12 @@ namespace PokedexC_sharp
             EspeciePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
             DescripcionPokemon.Text = misPokemons.Rows[0]["descripcion"].ToString();
             imagenPokemon.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+        }
+
+        private void buscador(object sender, EventArgs e)
+        {
+            BuscadorPokemon ventana = new BuscadorPokemon(this);
+            ventana.Show();
         }
     }
 }
