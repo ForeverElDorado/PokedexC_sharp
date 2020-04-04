@@ -84,15 +84,15 @@ namespace PokedexC_sharp
         public void enseñaPokemon()
         {
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            AreaPokemon.Text = misPokemons.Rows[0]["habitat"].ToString();
-            Tipo1Pokemon.Text = misPokemons.Rows[0]["tipo1"].ToString();
-            Tipo2Pokemon.Text = misPokemons.Rows[0]["tipo2"].ToString();
-            IdPokemon.Text = misPokemons.Rows[0]["id"].ToString();
-            Ataque1Pokemon.Text = misPokemons.Rows[0]["movimiento1"].ToString();
-            Ataque2Pokemon.Text = misPokemons.Rows[0]["movimiento2"].ToString();
-            Ataque3Pokemon.Text = misPokemons.Rows[0]["movimiento3"].ToString();
-            Ataque4Pokemon.Text = misPokemons.Rows[0]["movimiento4"].ToString();
-            EspeciePokemon.Text = misPokemons.Rows[0]["especie"].ToString();
+            AreaPokemon.Text = "Area: " + misPokemons.Rows[0]["habitat"].ToString();
+            Tipo1Pokemon.Text = "Tipo 1: " + misPokemons.Rows[0]["tipo1"].ToString();
+            Tipo2Pokemon.Text = "Tipo 2: " + misPokemons.Rows[0]["tipo2"].ToString();
+            IdPokemon.Text = "Nº: " + misPokemons.Rows[0]["id"].ToString() + "º";
+            Ataque1Pokemon.Text = "1.- " + misPokemons.Rows[0]["movimiento1"].ToString();
+            Ataque2Pokemon.Text = "2.- " + misPokemons.Rows[0]["movimiento2"].ToString();
+            Ataque3Pokemon.Text = "3.- " + misPokemons.Rows[0]["movimiento3"].ToString();
+            Ataque4Pokemon.Text = "4.- " + misPokemons.Rows[0]["movimiento4"].ToString();
+            EspeciePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
             DescripcionPokemon.Text = misPokemons.Rows[0]["descripcion"].ToString();
             imagenPokemon.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }

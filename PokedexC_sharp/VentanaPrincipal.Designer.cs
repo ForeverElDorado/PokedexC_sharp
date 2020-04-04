@@ -82,9 +82,9 @@
             // 
             // nombrePokemon
             // 
-            this.nombrePokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nombrePokemon.ForeColor = System.Drawing.Color.White;
-            this.nombrePokemon.Location = new System.Drawing.Point(221, 306);
+            this.nombrePokemon.BackColor = System.Drawing.Color.DarkRed;
+            this.nombrePokemon.ForeColor = System.Drawing.Color.Black;
+            this.nombrePokemon.Location = new System.Drawing.Point(236, 81);
             this.nombrePokemon.Name = "nombrePokemon";
             this.nombrePokemon.Size = new System.Drawing.Size(111, 36);
             this.nombrePokemon.TabIndex = 3;
@@ -115,9 +115,9 @@
             // 
             // AreaPokemon
             // 
-            this.AreaPokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AreaPokemon.ForeColor = System.Drawing.Color.White;
-            this.AreaPokemon.Location = new System.Drawing.Point(86, 306);
+            this.AreaPokemon.BackColor = System.Drawing.Color.Transparent;
+            this.AreaPokemon.ForeColor = System.Drawing.Color.Blue;
+            this.AreaPokemon.Location = new System.Drawing.Point(236, 307);
             this.AreaPokemon.Name = "AreaPokemon";
             this.AreaPokemon.Size = new System.Drawing.Size(111, 36);
             this.AreaPokemon.TabIndex = 6;
@@ -135,8 +135,8 @@
             // 
             // Tipo1Pokemon
             // 
-            this.Tipo1Pokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Tipo1Pokemon.ForeColor = System.Drawing.Color.White;
+            this.Tipo1Pokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Tipo1Pokemon.ForeColor = System.Drawing.Color.Black;
             this.Tipo1Pokemon.Location = new System.Drawing.Point(483, 350);
             this.Tipo1Pokemon.Name = "Tipo1Pokemon";
             this.Tipo1Pokemon.Size = new System.Drawing.Size(58, 39);
@@ -145,8 +145,8 @@
             // 
             // Tipo2Pokemon
             // 
-            this.Tipo2Pokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Tipo2Pokemon.ForeColor = System.Drawing.Color.White;
+            this.Tipo2Pokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Tipo2Pokemon.ForeColor = System.Drawing.Color.Black;
             this.Tipo2Pokemon.Location = new System.Drawing.Point(547, 350);
             this.Tipo2Pokemon.Name = "Tipo2Pokemon";
             this.Tipo2Pokemon.Size = new System.Drawing.Size(58, 39);
@@ -165,7 +165,7 @@
             // 
             // Ataque1Pokemon
             // 
-            this.Ataque1Pokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ataque1Pokemon.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Ataque1Pokemon.ForeColor = System.Drawing.Color.White;
             this.Ataque1Pokemon.Location = new System.Drawing.Point(483, 255);
             this.Ataque1Pokemon.Name = "Ataque1Pokemon";
@@ -175,7 +175,7 @@
             // 
             // Ataque2Pokemon
             // 
-            this.Ataque2Pokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ataque2Pokemon.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Ataque2Pokemon.ForeColor = System.Drawing.Color.White;
             this.Ataque2Pokemon.Location = new System.Drawing.Point(483, 294);
             this.Ataque2Pokemon.Name = "Ataque2Pokemon";
@@ -185,7 +185,7 @@
             // 
             // Ataque4Pokemon
             // 
-            this.Ataque4Pokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ataque4Pokemon.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Ataque4Pokemon.ForeColor = System.Drawing.Color.White;
             this.Ataque4Pokemon.Location = new System.Drawing.Point(627, 294);
             this.Ataque4Pokemon.Name = "Ataque4Pokemon";
@@ -195,7 +195,7 @@
             // 
             // Ataque3Pokemon
             // 
-            this.Ataque3Pokemon.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ataque3Pokemon.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Ataque3Pokemon.ForeColor = System.Drawing.Color.White;
             this.Ataque3Pokemon.Location = new System.Drawing.Point(627, 255);
             this.Ataque3Pokemon.Name = "Ataque3Pokemon";
@@ -207,9 +207,9 @@
             // 
             this.IdPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.IdPokemon.ForeColor = System.Drawing.Color.Black;
-            this.IdPokemon.Location = new System.Drawing.Point(284, 256);
+            this.IdPokemon.Location = new System.Drawing.Point(88, 307);
             this.IdPokemon.Name = "IdPokemon";
-            this.IdPokemon.Size = new System.Drawing.Size(36, 35);
+            this.IdPokemon.Size = new System.Drawing.Size(48, 35);
             this.IdPokemon.TabIndex = 8;
             this.IdPokemon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
