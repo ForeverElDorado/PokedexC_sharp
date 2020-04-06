@@ -38,7 +38,7 @@ namespace PokedexC_sharp
                 idActual = 1;
             }
             misPokemons = miConexion.getPokemonPorId(idActual);
-            enseñaPokemon();
+            enseñaPokemon(idActual);
         }
 
         private void Derecha_Click(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace PokedexC_sharp
                 idActual = 151;
             }
             misPokemons = miConexion.getPokemonPorId(idActual);
-            enseñaPokemon();
+            enseñaPokemon(idActual);
           
         }
 
@@ -78,11 +78,12 @@ namespace PokedexC_sharp
             //MessageBox.Show(eligePokemon.idSeleccionado.ToString());
             idActual = eligePokemon.idSeleccionado;
             misPokemons = miConexion.getPokemonPorId(idActual);
-            enseñaPokemon();
+            enseñaPokemon(idActual);
         }
         //Metodo que muestra toda la informacion de los pokemons segun el Id del contador.
-        public void enseñaPokemon()
+        public void enseñaPokemon(int id)
         {
+            misPokemons = miConexion.getPokemonPorId(id);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             AreaPokemon.Text = "Area: " + misPokemons.Rows[0]["habitat"].ToString();
             Tipo1Pokemon.Text = "Tipo 1: " + misPokemons.Rows[0]["tipo1"].ToString();
