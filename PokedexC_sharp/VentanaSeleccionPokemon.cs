@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace PokedexC_sharp
 {
+    //Writtten and Directed By Alvaro Garcia.
     public partial class VentanaSeleccionPokemon : Form
     {
-
+        //Metodo que muestra toda la info de la base de datos de los pokemons.
 
         public int idSeleccionado;
 

@@ -13,6 +13,9 @@ namespace PokedexC_sharp
 {
     public partial class VentanaPrincipal : Form
     {
+        //Writtten and Directed By Alvaro garcia.
+        //Tarda uno segundos al iniciarla por primera vez.
+        //El boton de la pokedex abierta es la Tabla de los pokemons.
 
         Conexion miConexion = new Conexion();
         DataTable misPokemons = new DataTable();
@@ -72,6 +75,7 @@ namespace PokedexC_sharp
 
         private void botonTablaPokemon(object sender, EventArgs e)
         {
+            //Este boton muestra el DATA GRID VIEW que recoge la info de todos los pokemons de la base de datos.
             VentanaSeleccionPokemon eligePokemon = new VentanaSeleccionPokemon();
             eligePokemon.ShowDialog();
 
@@ -83,6 +87,9 @@ namespace PokedexC_sharp
         //Metodo que muestra toda la informacion de los pokemons segun el Id del contador.
         public void enseñaPokemon(int id)
         {
+            /* Este metodo reduce la cantidad de codigo de los botones permitiendo agrupar todo en el mismo.
+             * Este metodo lee el Id Actual y muestra la info del mismo pokemon con esa id.(Alvaro)
+             */
             misPokemons = miConexion.getPokemonPorId(id);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             AreaPokemon.Text = "Area: " + misPokemons.Rows[0]["habitat"].ToString();
@@ -100,6 +107,7 @@ namespace PokedexC_sharp
 
         private void buscador(object sender, EventArgs e)
         {
+            //Abre la ventana del BuscadorPokemon(Alvaro)
             BuscadorPokemon ventana = new BuscadorPokemon(this);
             ventana.Show();
         }

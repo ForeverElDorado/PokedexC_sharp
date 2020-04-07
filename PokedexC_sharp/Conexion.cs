@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 namespace PokedexC_sharp
+    //WRITTEN AND DIRECTED BY ALVARO GARCIA HERRERO
 {
     class Conexion   
     {
@@ -71,6 +72,7 @@ namespace PokedexC_sharp
                 throw e;
             }
         }
+
         public String actualizaPokemon(String id, String dato)
         {
             try
